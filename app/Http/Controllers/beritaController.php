@@ -41,7 +41,7 @@ class beritaController extends Controller
             'judul' => $request->judul,
             'isi' => $request->isi,
             'published' => $request->published,
-            'created_at' => date('d-m-Y', time())
+            'created_at' => date('Y-m-d h:i:s', time())
         ]);
         return redirect('/berita');
     }
